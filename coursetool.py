@@ -13,4 +13,4 @@ def write_to(repo, branches, target_branch):
         current_parent = [commit_for_branch]
 
     print(current_parent)
-    repo.create_head(target_branch, current_parent[0])
+    repo.create_head(target_branch, current_parent[0], True)
