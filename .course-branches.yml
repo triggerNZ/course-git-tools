@@ -1,0 +1,6 @@
+course-branches:
+  - demo-1
+  - demo-2
+  - demo-3
+
+target-branch: demo-target
