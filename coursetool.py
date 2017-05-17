@@ -22,5 +22,6 @@ def roll_forward(repo, branches, branch_from):
 
     for branch_to in branches_to:
         print ("Cherry-picking from " + branch_from + " to " + branch_to)
+        #TODO handle more than one commit (right now we can just squash (or something))
         repo.git.cherry_pick(branch_from, branch_to)
         branch_from = branch_to
